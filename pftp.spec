@@ -7,7 +7,9 @@ License:	GPL
 Vendor:		Ben Schluricke <pftp@star.trek.org>
 Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
+Group(es):	Red/Utilitarios
 Group(pl):	Sieciowe/Narzêdzia
+Group(pt_BR):	Rede/Utilitários
 # native URL is http: but we probaably prefer ftp:
 # Source0:	http://pftp.prz.tu-berlin.de/%{name}-%{version}.tar.gz
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/network/file-transfer/%{name}-%{version}.tar.gz
