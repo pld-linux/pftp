@@ -9,6 +9,7 @@ Group:		Networking/Utilities
 # native URL is http: but we probaably prefer ftp:
 # Source0:	http://pftp.prz.tu-berlin.de/%{name}-%{version}.tar.gz
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/network/file-transfer/%{name}-%{version}.tar.gz
+# Source0-md5:	4f89779b3f7854a1481c6b6d8d927d7a
 URL:		http://star.trek.org/~pftp/
 Conflicts:	ftp-pftp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
