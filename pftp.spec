@@ -44,13 +44,13 @@ multicast itd. pftp wspiera zarówno IPv4 jak i IPv6/IPng.
 %patch -p1
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir},%{_sysconfdir}}
-make install \
+%{__make} install \
 	PREFIX="$RPM_BUILD_ROOT" \
 	BINDIR="$RPM_BUILD_ROOT%{_bindir}" \
 	MANDIR="$RPM_BUILD_ROOT%{_mandir}"
