@@ -7,7 +7,9 @@ Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
 License:	GPL
-Source0:	http://star.trek.org/~pftp/%{name}-%{version}.tar.gz
+# native URL is http: but we probaably prefer ftp:
+# Source0:	http://pftp.prz.tu-berlin.de/%{name}-%{version}.tar.gz
+Source0:	ftp://metalab.unc.edu/pub/Linux/system/network/file-transfer/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config.patch
 URL:		http://star.trek.org/~pftp/
 Vendor:		Ben Schluricke <pftp@star.trek.org>
