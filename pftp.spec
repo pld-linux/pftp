@@ -10,7 +10,6 @@ License:	GPL
 # native URL is http: but we probaably prefer ftp:
 # Source0:	http://pftp.prz.tu-berlin.de/%{name}-%{version}.tar.gz
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/network/file-transfer/%{name}-%{version}.tar.gz
-Patch0:		%{name}-config.patch
 URL:		http://star.trek.org/~pftp/
 Vendor:		Ben Schluricke <pftp@star.trek.org>
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,7 +38,6 @@ multicast itd. pftp wspiera zarówno IPv4 jak i IPv6/IPng.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 %{__make} CFLAGS="%{rpmcflags}"
