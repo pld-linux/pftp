@@ -4,10 +4,11 @@ Name:		pftp
 Version:	1.0.15
 Release:	1
 Group:		Networking/Utilities
+Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
 License:	GPL
 Source0:	http://star.trek.org/~pftp/%{name}-%{version}.tar.gz
-Patch0:		pftp-config.patch
+Patch0:		%{name}-config.patch
 URL:		http://star.trek.org/~pftp/
 Vendor:		Ben Schluricke <pftp@star.trek.org>
 #Prereq:	%{_sbindir}/useradd
@@ -44,7 +45,7 @@ multicast itd. pftp wspiera zarówno IPv4 jak i IPv6/IPng.
 %patch -p1
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -57,9 +58,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir},%{_sysconfdir}}
 
 install %{name}.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
-strip $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man*/* CREDITS README INSTALL
+gzip -9nf CREDITS README INSTALL
 
 %clean
 rm -rf $RPM_BUILD_ROOT
