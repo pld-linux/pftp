@@ -64,4 +64,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {CREDITS,README,INSTALL}.gz
 %attr(755, root, root) %{_bindir}/%{name}
-%attr(644, root, root) %config(noreplace) %verify(not size mtime md5) /etc/%{name}.conf
+%config(noreplace) %verify(not size mtime md5) /etc/%{name}.conf
