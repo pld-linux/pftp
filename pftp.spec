@@ -2,7 +2,7 @@ Summary:	Fast data transfer program
 Summary(pl):	Program do szybkiego transferu plików
 Name:		pftp
 Version:	1.1.6
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		Ben Schluricke <pftp@star.trek.org>
 Group:		Networking/Utilities
@@ -42,7 +42,12 @@ IPv6/IPng.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} CFLAGS="%{rpmcflags}" \
+	LIBCRYPT="-lcrypt" \
+	HAVE_SHADOW=1 \
+	PTHREAD="-DUSE_POSIX_THREAD" \
+	LIBPTHREAD="-lpthread"
+
 
 %install
 rm -rf $RPM_BUILD_ROOT
