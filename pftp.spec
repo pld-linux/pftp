@@ -3,15 +3,15 @@ Summary(pl):	program do szybkiego transferu plików
 Name:		pftp
 Version:	1.1.6
 Release:	1
+License:	GPL
+Vendor:		Ben Schluricke <pftp@star.trek.org>
 Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
-License:	GPL
 # native URL is http: but we probaably prefer ftp:
 # Source0:	http://pftp.prz.tu-berlin.de/%{name}-%{version}.tar.gz
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/network/file-transfer/%{name}-%{version}.tar.gz
 URL:		http://star.trek.org/~pftp/
-Vendor:		Ben Schluricke <pftp@star.trek.org>
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
