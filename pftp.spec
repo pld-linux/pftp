@@ -15,7 +15,7 @@ Vendor:		Ben Schluricke <pftp@star.trek.org>
 #Prereq:         %{_sbindir}/userdel
 #Prereq:         %{_sbindir}/groupdel
 #Prereq:		/bin/hostname
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This program transfers data from host to host on command line
