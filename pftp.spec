@@ -1,7 +1,7 @@
 Summary:	fast data transfer program
 Summary(pl):	program do szybkiego transferu plików
 Name:		pftp
-Version:	1.0.15
+Version:	1.1.6
 Release:	1
 Group:		Networking/Utilities
 Group(de):	Netzwerkwesen/Werkzeuge
@@ -13,11 +13,6 @@ Source0:	ftp://metalab.unc.edu/pub/Linux/system/network/file-transfer/%{name}-%{
 Patch0:		%{name}-config.patch
 URL:		http://star.trek.org/~pftp/
 Vendor:		Ben Schluricke <pftp@star.trek.org>
-#Prereq:	%{_sbindir}/useradd
-#Prereq:	%{_sbindir}/groupadd
-#Prereq:	%{_sbindir}/userdel
-#Prereq:	%{_sbindir}/groupdel
-#Prereq:	/bin/hostname
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
