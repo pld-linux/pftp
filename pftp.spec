@@ -68,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc CREDITS README INSTALL
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.conf
