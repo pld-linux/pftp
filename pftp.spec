@@ -42,7 +42,9 @@ IPv6/IPng.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" \
+%{__make} \
+	CC=%{__cc} \
+	CFLAGS="%{rpmcflags}" \
 	LIBCRYPT="-lcrypt" \
 	HAVE_SHADOW=1 \
 	PTHREAD="-DUSE_POSIX_THREAD" \
