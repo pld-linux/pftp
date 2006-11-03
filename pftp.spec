@@ -43,7 +43,7 @@ IPv6/IPng.
 
 %build
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}" \
 	LIBCRYPT="-lcrypt" \
 	HAVE_SHADOW=1 \
