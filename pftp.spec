@@ -1,5 +1,5 @@
 Summary:	Fast data transfer program
-Summary(pl):	Program do szybkiego transferu plikÛw
+Summary(pl.UTF-8):   Program do szybkiego transferu plik√≥w
 Name:		pftp
 Version:	1.1.6
 Release:	3
@@ -25,17 +25,17 @@ performance, send/receive AUDIO and VIDEO streams via UDP unicasted,
 broadcasted, and multicasted etc. pftp supports IPv4 as well as
 IPv6/IPng with all of the above mentioned features.
 
-%description -l pl
-Ten program przesy≥a dane z jednego hosta na inny. Jest uruchamiany z
-linii poleceÒ. Pozwala na rekurencyjnie kopiowanie katalogÛw,
-wysy≥anie/odbieranie standardowego strumienia wej∂ciowego/wyj∂ciowego,
-uøywanie w≥asnych filtrÛw, ustawienie bufora sieciowego, ustawienie
-pasma, akceptowanie okre∂lonych klientÛw, umoøliwia uruchamianie pftp
-jako demona, uruchamianie go przez inetd, przesy≥anie plikÛw i
-katalogÛw (do≥±czaj±c plik komunikatu) do innych osÛb w sieci,
-zarz±dzanie danymi, testowanie wydajno∂ci sieci, wysy≥anie/odbieranie
-strumieni dºwiÍkowych i wizyjnych po UDP w trybie unicastowym,
-broadcastowym i multicastowym itd. pftp wspiera zarÛwno IPv4 jak i
+%description -l pl.UTF-8
+Ten program przesy≈Ça dane z jednego hosta na inny. Jest uruchamiany z
+linii polece≈Ñ. Pozwala na rekurencyjnie kopiowanie katalog√≥w,
+wysy≈Çanie/odbieranie standardowego strumienia wej≈õciowego/wyj≈õciowego,
+u≈ºywanie w≈Çasnych filtr√≥w, ustawienie bufora sieciowego, ustawienie
+pasma, akceptowanie okre≈õlonych klient√≥w, umo≈ºliwia uruchamianie pftp
+jako demona, uruchamianie go przez inetd, przesy≈Çanie plik√≥w i
+katalog√≥w (do≈ÇƒÖczajƒÖc plik komunikatu) do innych os√≥b w sieci,
+zarzƒÖdzanie danymi, testowanie wydajno≈õci sieci, wysy≈Çanie/odbieranie
+strumieni d≈∫wiƒôkowych i wizyjnych po UDP w trybie unicastowym,
+broadcastowym i multicastowym itd. pftp wspiera zar√≥wno IPv4 jak i
 IPv6/IPng.
 
 %prep
