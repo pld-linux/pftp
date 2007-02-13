@@ -1,5 +1,5 @@
 Summary:	Fast data transfer program
-Summary(pl.UTF-8):   Program do szybkiego transferu plików
+Summary(pl.UTF-8):	Program do szybkiego transferu plików
 Name:		pftp
 Version:	1.1.6
 Release:	3
